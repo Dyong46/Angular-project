@@ -1,0 +1,117 @@
+/* Profile
+------------------------- */
+
+.profile .card-profile {
+  height: 400px;
+  width: 350px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: var(--color-2);
+  border: unset;
+}
+
+.profile .card-img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  transition: 0.25s;
+  margin: 0 auto;
+  transform: translateY(25px);
+  border-radius: 50%;
+  border: 4px solid  var(--color-4);
+  cursor: pointer;
+}
+
+.profile .card-img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  border: unset;
+  transform: unset;
+}
+
+.profile .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile h2 {
+  color: var(--color-4);
+  margin-top: 40px;
+}
+
+.profile p {
+  font-size: 18px;
+  color: var(--color-4)
+}
+
+.profile .card-social a {
+  text-decoration: none;
+  color: var(--color-4);
+  margin: 15px 20px 20px;
+  display: inline-block;
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.profile .card-social a:hover {
+  color: var(--color-3);
+}
+
+.profile button {
+  outline: none;
+  border: none;
+  color: var(--color-4);
+  background-color: transparent;
+  border: 2px solid var(--color-4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.profile button:hover {
+  background-color: var(--color-4);
+  color: var(--color-3);
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
